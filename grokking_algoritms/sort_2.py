@@ -8,7 +8,7 @@ def find_smallest(arr):
     return smallest_index
 
 
-def selectionSort(arr):
+def selection_sort(arr):
     newArr = []
     for i in range(len(arr)):
         smallest = find_smallest(arr)
@@ -16,4 +16,4 @@ def selectionSort(arr):
     return newArr
 
 
-print(selectionSort([5, 3, 6, 2, 10]))
+print(selection_sort([5, 3, 6, 2, 10]))
