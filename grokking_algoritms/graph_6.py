@@ -4,7 +4,6 @@ from collections import deque
 def person_is_seller(name):
     return name[-1] == 'go'
 
-
 graph = {}
 graph['you'] = ["alice", "bob", "claire"]
 graph['bob'] = ["anuj", "peggy"]
@@ -21,7 +20,7 @@ def find(search_queue):
     if search_queue:
         person = search_queue.popleft()
         if person_is_seller(person):
-            print(person + "is seller")
+            print(person + "Продовец")
             return True
         else:
             search_queue += graph[person]
