@@ -11,9 +11,9 @@ def appendN(N):
 
 
 def F(N):
-    N = bin(N).replace('0b', '') # перевод в двоичную
-    R = appendN(appendN(appendN(N))) # так как шаг надо повторить 1+2 раза
-    return int(R, 2) # перевод в десятичную
+    N = bin(N).replace('0b', '')  # перевод в двоичную
+    R = appendN(appendN(appendN(N)))  # так как шаг надо повторить 1+2 раза
+    return int(R, 2)  # перевод в десятичную
 
 
 for i in range(105, 1000):
