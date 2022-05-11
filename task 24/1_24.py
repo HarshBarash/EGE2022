@@ -60,10 +60,9 @@ for i in range(1, len(s)):
 if k != "":
     n = int(k)
     if n % 2 != 0 and n > nmax:
-            nmax = n
+        nmax = n
 print(nmax)
 f.close()
-
 
 # Поиск КОТ
 f = open("1_24.txt")
@@ -71,7 +70,7 @@ k = 0
 kmax = 0
 s = f.readline()
 for i in range(len(s) - 2):
-    if s[i] == "К" and s[i+1] == "О" and s[i+2] == "Т":
+    if s[i] == "К" and s[i + 1] == "О" and s[i + 2] == "Т":
         k += 1
         if k > kmax:
             kmax = k
@@ -84,13 +83,22 @@ f.close()
 f = open("1_24.txt")
 k = 0
 k1 = 0
-kmax = 0
 s = f.readline()
 for i in range(len(s) - 2):
-    if s[i] == "К" and s[i+1] == "О" and s[i+2] == "Т":
+    if s[i] == "К" and s[i + 1] == "О" and s[i + 2] == "Т":
         k += 1
-for i in range(len(s) - 2):
+for i in range(len(s) - 4):
     if s[i] == "К" and s[i + 1] == "О" and s[i + 2] == "Т" and s[i + 3] == "И" and s[i + 4] == "К":
         k1 += 1
 print(k - k1)
+f.close()
+
+# цепочка символов
+f = open("1_24.txt")
+k = 0
+s = f.readline()
+for i in range(len(s) - 4):
+    if s[i] != s[i + 1] and s[i + 1] != s[i + 2] and s[i + 2] != s[i + 3] and s[i + 3] != s[i + 4]:
+        k += 1
+print(k)
 f.close()
