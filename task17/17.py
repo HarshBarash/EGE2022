@@ -93,25 +93,41 @@ with open("17.txt") as f:
             res.append((s[i] + s[i - 1]))
 print(len(res), max(res))
 
-
 with open("17.txt") as f:
     s = [int(x) for x in f]
     res = []
-    for i in range(0, len(s)-1):
-        for j in range(i+1, len(s)):
+    for i in range(0, len(s) - 1):
+        for j in range(i + 1, len(s)):
             if ((s[i] - s[j] % 2 == 0) and (s[i] % 19 == 0 or s[j] % 19 == 0)):
                 res.append(s[i] - s[j])
 print(len(res), max(res))
 
-
-
-#тройки
+# тройки
 with open("17.txt") as f:
     s = [int(x) for x in f]
     res = []
     for i in range(2, len(s)):
-        if (s[i-2] < (sum(s) // len(s)) and '9' in str(s[i-2]) and '9' in str(s[i-1]) and '9' in str(s[i])) or \
-            (s[i - 1] < (sum(s) // len(s)) and '9' in str(s[i - 2]) and '9' in str(s[i - 1]) and '9' in str(s[i])) or \
+        if (s[i - 2] < (sum(s) // len(s)) and '9' in str(s[i - 2]) and '9' in str(s[i - 1]) and '9' in str(s[i])) or \
+                (s[i - 1] < (sum(s) // len(s)) and '9' in str(s[i - 2]) and '9' in str(s[i - 1]) and '9' in str(
+                    s[i])) or \
                 (s[i] < (sum(s) // len(s)) and '9' in str(s[i - 2]) and '9' in str(s[i - 1]) and '9' in str(s[i])):
-            res.append(s[i] + s[i-1] + s[i-2])
+            res.append(s[i] + s[i - 1] + s[i - 2])
+print(len(res), max(res))
+
+with open("17.txt") as f:
+    s = [int(x) for x in f]
+    res = []
+    for i in range(len(s) - 1):
+        if abs(s[i]) % 3 == 0 or abs(s[i - 1]) % 3 == 0:
+            res.append((s[i] + s[i - 1]))
+print(len(res), max((res)))
+
+
+with open("17.txt") as f:
+    s = [int(x) for x in f]
+    res = []
+    for i in range(len(s) - 1):
+        for j in range(i + 1, len(s)):
+            if (s[i] - s[j]) % 2 == 0 and ((s[i]) % 31 == 0 or (s[j]) % 31 == 0):
+                res.append((s[i] + s[j]))
 print(len(res), max(res))
