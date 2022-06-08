@@ -58,3 +58,6 @@
 
 Занятие [№24 часть 1](https://youtu.be/fzLCX48jxG0)  - 11.05.22 ~ 2 часa 
 <br> 83 Вторичных баллa <hr>
+
+Занятие [№17](https://youtu.be/7fAmVkJxNj0) [№17 часть 2](https://youtu.be/kGFStSZRk5k) - 07.06.22 ~ 2 часa 
+<br> 85 Вторичных баллов <hr>
