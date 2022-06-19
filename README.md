@@ -61,3 +61,6 @@
 
 Занятие [№17](https://youtu.be/7fAmVkJxNj0) [№17 часть 2](https://youtu.be/kGFStSZRk5k) - 07.06.22 ~ 2 часa 
 <br> 85 Вторичных баллов <hr>
+
+Занятие [№26](https://youtu.be/0GU-TTQlX7A) - 19.06.22 ~ 1 час 
+<br> 90 Вторичных баллов <hr>
